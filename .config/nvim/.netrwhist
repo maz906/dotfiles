@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/nazenji/.vim'
+let g:netrw_dirhist_2='/home/nazenji/.oh-my-zsh'
+let g:netrw_dirhist_3='/etc/usb_modeswitch.d'
+let g:netrw_dirhist_4='/etc/udisks2'
+let g:netrw_dirhist_5='/etc/udev/rules.d'
+let g:netrw_dirhist_6='/home/nazenji/.gimp-2.8'
+let g:netrw_dirhist_7='/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:08/PNP0C09:00/PNP0C0A:01/power_supply/BAT1/device'

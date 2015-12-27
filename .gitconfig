@@ -1,0 +1,5 @@
+[user]
+	email = [myemail]
+	name = [myusername] 
+[push]
+	default = simple
