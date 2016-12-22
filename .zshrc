@@ -120,3 +120,13 @@ alias pycomp="python -m py_compile"
 
 source /usr/local/bin/virtualenvwrapper.sh
 
+alias bazel="~/code/google/bazel/output/bazel"
+alias clang="clang-3.8"
+
+xinput --set-prop 11 "Device Accel Constant Deceleration" 1.0
+synclient HorizHysteresis=2
+synclient VertHysteresis=2
+synclient MaxSpeed=5
+synclient MinSpeed=1
+synclient PalmDetect=1
+
