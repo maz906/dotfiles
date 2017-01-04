@@ -53,6 +53,8 @@ set expandtab
 set shiftwidth=2
 set smarttab
 set number
+set cc=100
+
 syntax enable
 let g:solarized_termtrans = 1
 let g:solarized_termcolors = 16
@@ -64,6 +66,11 @@ highlight Constant ctermfg=White
 colorscheme solarized
 set autoindent
 set cindent
+
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
