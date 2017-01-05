@@ -54,6 +54,8 @@ set shiftwidth=2
 set smarttab
 set number
 set cc=100
+set textwidth=80
+set wrapmargin=2
 
 syntax enable
 let g:solarized_termtrans = 1
