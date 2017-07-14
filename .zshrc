@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/nazenji/.oh-my-zsh
+export ZSH=/home/mzhaox/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,7 +49,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search)
+plugins=(git history history-substring-search)
 
 # User configuration
 
@@ -115,18 +115,4 @@ bindkey '[[1;5B' history-search-forward
 ############################### USER ##################################
 
 alias open='xdg-open'
-alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
-alias pycomp="python -m py_compile"
-
-source /usr/local/bin/virtualenvwrapper.sh
-
-alias bazel="~/code/google/bazel/output/bazel"
-alias clang="clang-3.8"
-
-xinput --set-prop 11 "Device Accel Constant Deceleration" 1.0
-synclient HorizHysteresis=2
-synclient VertHysteresis=2
-synclient MaxSpeed=5
-synclient MinSpeed=1
-synclient PalmDetect=1
 
