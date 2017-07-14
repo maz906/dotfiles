@@ -54,7 +54,7 @@ set expandtab
 set shiftwidth=2
 set smarttab
 set number
-set cc=100
+set cc=81
 set textwidth=80
 set wrapmargin=2
 
