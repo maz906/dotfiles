@@ -1,6 +1,27 @@
 # SSH key creation
 ssh-keygen -t rsa -b 8192
 
+# Get Chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+
+# Get Spotify
+sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
+sudo apt-get update -qq
+sudo apt-get install spotify-client
+
+# Get Dropbox
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+
+# Get Insync
+cd ~ && wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_1.3.18.36169-zesty_amd64.deb
+sudo dpkg -i insync*.deb
+rm insync*.deb
+
 # Basic packages that I normally want installed
 sudo apt install vim-gtk cmake git build-essential texlive-full
 
