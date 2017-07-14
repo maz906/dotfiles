@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/nazenji/code/cs3100/third_party/java/jflap-lib/jflaplib-core'
-let g:netrw_dirhist_2='/home/nazenji/code/kattis/ceiling/src/main/java'
-let g:netrw_dirhist_3='/home/nazenji/code/valhalla/hotspot/src/jdk.vm.ci'
-let g:netrw_dirhist_4='/home/nazenji/Dropbox/applications/priority/princeton'
-let g:netrw_dirhist_5='/home/nazenji/Dropbox/applications/sops/umich'
-let g:netrw_dirhist_6='/home/nazenji/Dropbox/current/cft/gcft_ii'
