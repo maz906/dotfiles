@@ -115,4 +115,5 @@ bindkey '[[1;5B' history-search-forward
 ############################### USER ##################################
 
 alias open='xdg-open'
+alias mktex='latexmk -pdf -pvc'
 
