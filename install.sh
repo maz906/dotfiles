@@ -28,6 +28,9 @@ rm insync*.deb
 # Basic packages that I normally want installed
 sudo apt install vim-gtk cmake git build-essential texlive-full
 
+# Latexmk configuration file
+cp .latexmkrc ~
+
 
 # Configure .vimrc and Vim plugins
 mv .vimrc ~
