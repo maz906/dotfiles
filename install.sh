@@ -56,10 +56,10 @@ mkdir -p $WORKON_HOME
 # Java 8 installation
 # Origin:
 # https://askubuntu.com/questions/521145/how-to-install-oracle-java-on-ubuntu-14-04
-sudo apt-add-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:linuxuprising/java
 sudo apt update
-sudo apt install oracle-java8-installer
-echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~/.zshrc
+sudo apt install oracle-java10-installer
+sudo apt-get install oracle-java10-set-default
 
 # JavaScript installation
 # Origin:
