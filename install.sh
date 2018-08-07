@@ -18,7 +18,8 @@ sudo apt install spotify-client
 # Get Dropbox
 # Source: https://www.dropbox.com/install-linux
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-~/.dropbox-dist/dropboxd &
+nohup ~/.dropbox-dist/dropboxd &
+
 
 # Get Insync
 cd ~ && wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_1.3.18.36169-zesty_amd64.deb
