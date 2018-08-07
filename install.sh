@@ -33,8 +33,8 @@ cp .latexmkrc ~
 
 
 # Configure .vimrc and Vim plugins
-mv .vimrc ~
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mv .vimrc ~
 vim +PluginInstall +qall
 
 # Install zsh, oh-my-zsh, and .zshrc
