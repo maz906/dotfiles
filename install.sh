@@ -5,20 +5,20 @@ ssh-keygen -t rsa -b 8192
 # Source: https://askubuntu.com/questions/510056/how-to-install-google-chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo apt-get update 
-sudo apt-get install google-chrome-stable
+sudo apt update 
+sudo apt install google-chrome-stable
 
 # Get Spotify
 # Source: https://www.spotify.com/uk/download/linux/
-sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
-sudo apt-get update -qq
-sudo apt-get install spotify-client
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt update
+sudo apt install spotify-client
 
 # Get Dropbox
 # Source: https://www.dropbox.com/install-linux
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-~/.dropbox-dist/dropboxd
+~/.dropbox-dist/dropboxd &
 
 # Get Insync
 cd ~ && wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_1.3.18.36169-zesty_amd64.deb
